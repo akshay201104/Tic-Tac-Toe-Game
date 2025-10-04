@@ -20,8 +20,10 @@ const resetGame = () =>{
     turnO = true;
     for(let box of boxes){
         box.innerText="";
+        box.disabled=false;
     }
     msgContainer.classList.add("hide");
+    box.disabled=false;
 }
 
 resetBtn.addEventListener("click",resetGame);
